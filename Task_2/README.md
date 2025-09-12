@@ -77,7 +77,7 @@ http://localhost:3001
       {
         "id": 1,
         "name": "John Doe",
-        "email": "john@example.com",
+        "email": "john@gmail.com",
         "age": 30
       }
     ],
@@ -97,7 +97,7 @@ http://localhost:3001
     "data": {
       "id": 1,
       "name": "John Doe",
-      "email": "john@example.com",
+      "email": "john@gmail.com",
       "age": 30
     }
   }
@@ -110,7 +110,7 @@ http://localhost:3001
   ```json
   {
     "name": "Alice Johnson",
-    "email": "alice@example.com",
+    "email": "alice@gmail.com",
     "age": 28
   }
   ```
@@ -122,7 +122,7 @@ http://localhost:3001
     "data": {
       "id": 4,
       "name": "Alice Johnson",
-      "email": "alice@example.com",
+      "email": "alice@gmail.com",
       "age": 28
     }
   }
@@ -137,7 +137,7 @@ http://localhost:3001
   ```json
   {
     "name": "Alice Smith",
-    "email": "alice.smith@example.com",
+    "email": "alice.smith@gmail.com",
     "age": 29
   }
   ```
@@ -149,7 +149,7 @@ http://localhost:3001
     "data": {
       "id": 4,
       "name": "Alice Smith",
-      "email": "alice.smith@example.com",
+      "email": "manaf@gmail.com",
       "age": 29
     }
   }
@@ -168,7 +168,7 @@ http://localhost:3001
     "data": {
       "id": 4,
       "name": "Alice Smith",
-      "email": "alice.smith@example.com",
+      "email": "alice.smith@gmail.com",
       "age": 29
     }
   }
