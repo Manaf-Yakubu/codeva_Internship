@@ -1,0 +1,63 @@
+{
+  "name": "fullstack-development-template",
+  "version": "1.0.0",
+  "description": "A complete full-stack development template with Node.js, Express, and modern frontend frameworks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && npm start",
+    "server": "nodemon server.js",
+    "build": "cd client && npm run build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write .",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "fullstack",
+    "react",
+    "mongodb",
+    "mysql",
+    "postgresql"
+  ],
+  "author": "Yakubu Abdul Manaf <yakubumamaf732hub@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "jest": "^29.6.2",
+    "supertest": "^6.3.3",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-node": "^11.1.0",
+    "prettier": "^3.0.1",
+    "@types/node": "^20.5.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Yakubu-Abdul-Manaf/codeva_Internship.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Yakubu-Abdul-Manaf/codeva_Internship/issues"
+  },
+  "homepage": "https://github.com/Yakubu-Abdul-Manaf/codeva_Internship#readme"
+}
