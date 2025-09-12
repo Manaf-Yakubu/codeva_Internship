@@ -155,7 +155,7 @@ git add .
 git commit -m "Initial commit"
 
 # Create repository on GitHub, then:
-git remote add origin https://github.com/yourusername/your-repo.git
+git remote add origin https://github.com/Manaf-Yakubu/codeva_Internship.git
 git push -u origin main
 ```
 

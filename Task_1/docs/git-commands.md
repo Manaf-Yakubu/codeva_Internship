@@ -21,9 +21,9 @@ git config user.email
 git init
 
 # Clone existing repository
-git clone https://github.com/username/repository.git
+git clone https://github.com/Manaf-Yakubu/codeva_Internship.git
 git clone git@github.com:username/repository.git  # SSH
-git clone https://github.com/username/repository.git my-folder  # Custom folder name
+git clone https://github.com/Manaf-Yakubu/codeva_Internship.git   # Custom folder name
 ```
 
 ## 📁 Basic Workflow
