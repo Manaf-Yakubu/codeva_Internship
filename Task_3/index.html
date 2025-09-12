@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yakubu Abdul Manaf - Full Stack Developer Portfolio showcasing skills in HTML5, CSS3, JavaScript, and modern web development">
+    <meta name="keywords" content="full stack developer, web developer, HTML, CSS, JavaScript, portfolio, Ghana">
+    <meta name="author" content="Yakubu Abdul Manaf">
+    
+    <title>Yakubu Abdul Manaf - Full Stack Developer Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="sr-only">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Yakubu Manaf</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#users" class="nav-link">Users</a>
+                <a href="#quotes" class="nav-link">Quotes</a>
+                <a href="#github" class="nav-link">GitHub</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">Yakubu Abdul Manaf</span>
+                    </h1>
+                    <p class="hero-subtitle">Full Stack Developer from Ghana</p>
+                    <p class="hero-description">
+                        I create beautiful, responsive, and user-friendly web applications using modern technologies. 
+                        Passionate about clean code, great user experiences, and continuous learning in both frontend and backend development.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#about" class="btn btn-primary">
+                            <i class="fas fa-user"></i>
+                            Learn More
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-envelope"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <p>Passionate Full Stack Developer creating exceptional digital experiences</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5 & Semantic Web</h3>
+                        <p>Expert in modern HTML5, semantic markup, accessibility standards, and SEO best practices for creating well-structured web content.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3 & Responsive Design</h3>
+                        <p>Proficient in CSS3, Flexbox, Grid, animations, and responsive design principles to create beautiful and functional user interfaces.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript & ES6+</h3>
+                        <p>Strong knowledge of modern JavaScript, ES6+ features, DOM manipulation, and asynchronous programming for interactive web applications.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile-First Development</h3>
+                        <p>Experienced in mobile-first responsive design, progressive web apps, and cross-browser compatibility for optimal user experience.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>Version Control & Git</h3>
+                        <p>Proficient with Git version control, GitHub workflows, collaborative development, and modern development tools and practices.</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Backend Development</h3>
+                        <p>Experienced with Node.js, Express.js, REST APIs, databases, and server-side development for complete full-stack solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Users Section -->
+        <section id="users" class="users">
+            <div class="container">
+                <div class="section-header">
+                    <h2>User Management</h2>
+                    <p>Interactive user management system with full CRUD operations</p>
+                </div>
+                
+                <div class="users-controls">
+                    <button class="btn btn-primary" id="load-users">
+                        <i class="fas fa-users"></i>
+                        Load Users
+                    </button>
+                    <button class="btn btn-secondary" id="add-user">
+                        <i class="fas fa-user-plus"></i>
+                        Add New User
+                    </button>
+                    <button class="btn btn-secondary" id="refresh-users">
+                        <i class="fas fa-sync-alt"></i>
+                        Refresh
+                    </button>
+                </div>
+                
+                <div id="users-container">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Click "Load Users" to fetch user data...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes" class="quotes">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Daily Inspiration</h2>
+                    <p>Motivational quotes to inspire and energize</p>
+                </div>
+                
+                <div class="quote-container">
+                    <div class="quote-card" id="quote-card">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <div class="loading">
+                            <div class="spinner"></div>
+                            <p>Loading inspirational quote...</p>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" id="new-quote">
+                        <i class="fas fa-refresh"></i>
+                        Get New Quote
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Section -->
+        <section id="github" class="github">
+            <div class="container">
+                <div class="section-header">
+                    <h2>GitHub Profile</h2>
+                    <p>My coding journey and open source contributions</p>
+                </div>
+                
+                <div id="github-profile">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading GitHub profile...</p>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: 2rem;">
+                    <a href="https://github.com/Manaf-Yakubu" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <i class="fab fa-github"></i>
+                        Visit My GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get In Touch</h2>
+                    <p>Let's work together to create something amazing</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Accra, Ghana</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>yakubumanaf732hub@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+233 20 143 6945</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>linkedin.com/in/yakubu-manaf</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Yakubu Abdul Manaf</h4>
+                    <p>Full Stack Developer passionate about creating beautiful, functional, and user-friendly web applications. Always learning and exploring new technologies in both frontend and backend development.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/Manaf-Yakubu" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/yakubu-manaf" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/yakubu_manaf" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:yakubumanaf732hub@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#users">Users</a></li>
+                        <li><a href="#quotes">Quotes</a></li>
+                        <li><a href="#github">GitHub</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript ES6+</li>
+                        <li>Responsive Design</li>
+                        <li>API Integration</li>
+                        <li>Version Control (Git)</li>
+                        <li>Web Performance</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Full Stack Development</li>
+                        <li>Frontend & Backend Development</li>
+                        <li>API Development & Integration</li>
+                        <li>Database Design</li>
+                        <li>Code Review & Architecture</li>
+                        <li>Technical Consulting</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yakubu Abdul Manaf. All rights reserved. Built with ❤️ in Ghana.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/portfolio.js"></script>
+</body>
+</html>
