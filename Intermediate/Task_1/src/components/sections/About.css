@@ -1,0 +1,338 @@
+/* About section styles */
+.about {
+  padding: var(--spacing-3xl) 0;
+  background-color: var(--color-surface);
+}
+
+.about__header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xl);
+}
+
+.about__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.about__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3xl);
+}
+
+.about__section-title {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+/* Intro section */
+.about__intro-card {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about__intro-content h3 {
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+.about__metrics {
+  display: flex;
+  justify-content: space-around;
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.metric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.metric__number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.metric__label {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: var(--spacing-xs);
+}
+
+/* Technologies grid */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.tech-card {
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.tech-card:hover {
+  transform: translateY(-4px);
+}
+
+.tech-card__content {
+  padding: var(--spacing-lg);
+}
+
+.tech-card__icon {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-md);
+  display: block;
+}
+
+.tech-card__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.tech-card__description {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tech card color variants */
+.tech-card--primary .tech-card__icon {
+  color: var(--color-primary);
+}
+
+.tech-card--secondary .tech-card__icon {
+  color: var(--color-secondary);
+}
+
+.tech-card--accent .tech-card__icon {
+  color: var(--color-accent);
+}
+
+/* Features grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.feature-card {
+  height: 100%;
+}
+
+.feature-description {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+  line-height: 1.6;
+}
+
+.feature-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-benefits li {
+  position: relative;
+  padding-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-xs);
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.feature-benefits li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+/* Developer section */
+.developer-card {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.developer-info {
+  display: flex;
+  gap: var(--spacing-lg);
+  align-items: flex-start;
+}
+
+.developer-avatar {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.developer-details h4 {
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.developer-details p {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-secondary);
+}
+
+.developer-details strong {
+  color: var(--color-text-primary);
+}
+
+.developer-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.skill-tag {
+  background-color: var(--color-primary);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.skill-tag:nth-child(2) {
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
+}
+
+.skill-tag:nth-child(3) {
+  background-color: var(--color-accent);
+}
+
+.skill-tag:nth-child(4) {
+  background-color: #6366f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .about {
+    padding: var(--spacing-2xl) 0;
+  }
+
+  .about__title {
+    font-size: 2rem;
+  }
+
+  .about__subtitle {
+    font-size: 1rem;
+  }
+
+  .about__section-title {
+    font-size: 1.5rem;
+  }
+
+  .about__content {
+    gap: var(--spacing-2xl);
+  }
+
+  .about__metrics {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .tech-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .developer-info {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .developer-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__title {
+    font-size: 1.75rem;
+  }
+
+  .about__section-title {
+    font-size: 1.375rem;
+  }
+
+  .tech-card__content {
+    padding: var(--spacing-md);
+  }
+
+  .tech-card__icon {
+    font-size: 2.5rem;
+  }
+
+  .developer-skills {
+    justify-content: center;
+  }
+
+  .metric__number {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation enhancements */
+.tech-card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.tech-card:nth-child(1) { animation-delay: 0.1s; }
+.tech-card:nth-child(2) { animation-delay: 0.2s; }
+.tech-card:nth-child(3) { animation-delay: 0.3s; }
+.tech-card:nth-child(4) { animation-delay: 0.4s; }
+.tech-card:nth-child(5) { animation-delay: 0.5s; }
+.tech-card:nth-child(6) { animation-delay: 0.6s; }
+
+.feature-card {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.2s; }
+.feature-card:nth-child(2) { animation-delay: 0.4s; }
+.feature-card:nth-child(3) { animation-delay: 0.6s; }
+.feature-card:nth-child(4) { animation-delay: 0.8s; }

@@ -1,0 +1,233 @@
+/* Footer component styles */
+.footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  margin-top: auto;
+  padding: var(--spacing-3xl) 0 var(--spacing-xl) 0;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-2xl);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.footer__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer__subtitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer__description {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-md);
+}
+
+/* Developer section */
+.footer__developer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer__developer p {
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.footer__developer strong {
+  color: var(--color-text-primary);
+}
+
+.footer__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+/* Technology and API lists */
+.footer__tech-list,
+.footer__api-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.footer__tech-list li,
+.footer__api-list li {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: var(--spacing-md);
+  margin: 0;
+}
+
+.footer__tech-list li::before,
+.footer__api-list li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--color-primary);
+  font-size: 0.7rem;
+  top: 2px;
+}
+
+/* Badges */
+.footer__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge--react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+.badge--vite {
+  background-color: #646cff;
+  color: white;
+}
+
+.badge--css {
+  background-color: #1572b6;
+  color: white;
+}
+
+/* Footer bottom */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.footer__copyright p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.footer__ghana {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+.ghana-flag {
+  font-size: 1.2rem;
+  animation: wave 2s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg) 0;
+  }
+
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+
+  .footer__title {
+    font-size: 1.25rem;
+  }
+
+  .footer__subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+  }
+
+  .footer__badges {
+    justify-content: center;
+  }
+
+  .footer__tech-list,
+  .footer__api-list {
+    text-align: left;
+  }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .footer {
+  background-color: var(--color-dark-surface);
+}
+
+[data-theme="dark"] .badge--react {
+  background-color: #61dafb;
+  color: #000;
+}
+
+[data-theme="dark"] .badge--vite {
+  background-color: #646cff;
+  color: white;
+}
+
+[data-theme="dark"] .badge--css {
+  background-color: #1572b6;
+  color: white;
+}
