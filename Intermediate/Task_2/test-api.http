@@ -1,0 +1,93 @@
+### CodeVa Auth API Testing
+### Use this file with REST Client extension in VS Code or similar HTTP client
+
+### Health Check
+GET http://localhost:3000/health
+
+### Welcome Endpoint
+GET http://localhost:3000/
+
+### 1. User Signup
+POST http://localhost:3000/api/auth/signup
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "password": "TestPass123!"
+}
+
+### 2. User Login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@example.com",
+  "password": "TestPass123!"
+}
+
+### 3. Admin Login (Default admin user)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@codeva.com",
+  "password": "admin123"
+}
+
+### 4. Get Current User (Replace with actual token)
+GET http://localhost:3000/api/auth/me
+Authorization: Bearer YOUR_ACCESS_TOKEN_HERE
+
+### 5. Refresh Token
+POST http://localhost:3000/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "YOUR_REFRESH_TOKEN_HERE"
+}
+
+### 6. Admin Stats (Requires admin token)
+GET http://localhost:3000/api/admin/stats
+Authorization: Bearer ADMIN_ACCESS_TOKEN_HERE
+
+### 7. Get All Users (Admin only)
+GET http://localhost:3000/api/admin/users?page=1&limit=10
+Authorization: Bearer ADMIN_ACCESS_TOKEN_HERE
+
+### 8. Update User Role (Admin only)
+PUT http://localhost:3000/api/admin/users/2/role
+Authorization: Bearer ADMIN_ACCESS_TOKEN_HERE
+Content-Type: application/json
+
+{
+  "role": "admin"
+}
+
+### 9. Get User Details (Admin only)
+GET http://localhost:3000/api/admin/users/2
+Authorization: Bearer ADMIN_ACCESS_TOKEN_HERE
+
+### 10. Cleanup Expired Tokens (Admin only)
+POST http://localhost:3000/api/admin/cleanup-tokens
+Authorization: Bearer ADMIN_ACCESS_TOKEN_HERE
+
+### 11. Logout
+POST http://localhost:3000/api/auth/logout
+Authorization: Bearer YOUR_ACCESS_TOKEN_HERE
+
+### 12. Logout All Devices
+POST http://localhost:3000/api/auth/logout-all
+Authorization: Bearer YOUR_ACCESS_TOKEN_HERE
+
+### Test Invalid Endpoints
+GET http://localhost:3000/api/invalid-endpoint
+
+### Test Rate Limiting (Run multiple times quickly)
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "wrong@example.com",
+  "password": "wrongpassword"
+}
