@@ -4,7 +4,7 @@
 **Task:** Build a comprehensive GraphQL API using Apollo Server as an alternative to REST for efficient data fetching  
 **Participant:** Yakubu Abdul Manaf  
 **Location:** Ghana  
-**Date:** December 15, 2024  
+**Date:** September 15, 2024  
 
 ## ✅ Completed Deliverables
 
